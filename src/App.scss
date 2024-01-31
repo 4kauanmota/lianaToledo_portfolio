@@ -1,5 +1,9 @@
 @use "/src/theme/colors.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 
