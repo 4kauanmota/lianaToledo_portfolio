@@ -10,6 +10,8 @@
 
   background: linear-gradient(90deg, colors.$main, colors.$secondary);
 
+  z-index: 1;
+
   div {
     height: 100%;
 
@@ -98,42 +100,6 @@
         padding: 0 1.5rem 0 0;
       }
 
-      ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-        position: fixed;
-        top: 0;
-        left: 0;
-
-        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-
-        width: 90%;
-        height: 0;
-
-        transform: translateX(5%);
-        background: linear-gradient(90deg, colors.$main, colors.$secondary);
-        border-radius: 8px;
-
-        opacity: 0;
-
-        padding: 0;
-        gap: 0;
-
-        li {
-          text-align: center;
-
-          font-size: 1.5rem;
-
-          a {
-            &.selected::after {
-              width: 20%;
-            }
-          }
-        }
-      }
-
       .hamburguerMenu {
         height: 2rem;
 
@@ -174,10 +140,48 @@
 
           & ~ ul {
             top: 12%;
+            pointer-events: all;
 
             height: 35%;
 
             opacity: 1;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+        width: 90%;
+        height: 0;
+
+        transform: translateX(5%);
+        background: linear-gradient(90deg, colors.$main, colors.$secondary);
+        border-radius: 8px;
+
+        opacity: 0;
+
+        padding: 0;
+        gap: 0;
+
+        li {
+          text-align: center;
+
+          font-size: 1.5rem;
+
+          a {
+            &.selected::after {
+              width: 20%;
+            }
           }
         }
       }

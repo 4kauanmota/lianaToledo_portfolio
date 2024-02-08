@@ -17,11 +17,8 @@
     &.informations {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
 
-      overflow: scroll;
-
-      .title {
+      .container {
         display: flex;
         gap: 2rem;
 
@@ -51,7 +48,7 @@
 
           h1 {
             font-size: 4rem;
-            font-weight: 600;
+            font-weight: 400;
 
             margin: 0;
           }
@@ -72,7 +69,7 @@
           }
         }
 
-        .text {
+        .description {
           width: 100%;
 
           text-align: justify;
@@ -101,7 +98,7 @@
       &.informations {
         flex-direction: column;
 
-        .title {
+        .container {
           flex-direction: column;
           align-items: center;
           gap: 1rem;
@@ -109,9 +106,6 @@
           .imageContainer {
             width: 45vw;
             height: 45vw;
-
-            img {
-            }
           }
 
           .presentation {
@@ -132,10 +126,8 @@
           }
         }
 
-        .text {
+        .description {
           width: 100%;
-          p {
-          }
         }
       }
     }
@@ -148,7 +140,7 @@
       width: 90%;
 
       &.informations {
-        .title {
+        .container {
           .imageContainer {
             min-width: 35vw;
           }
@@ -162,7 +154,7 @@
   #aboutMe {
     article {
       &.informations {
-        .title {
+        .container {
           .imageContainer {
             width: 400px;
             height: 400px;
