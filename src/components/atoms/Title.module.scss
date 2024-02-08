@@ -1,0 +1,19 @@
+@use "/src/theme/colors.scss";
+
+.title {
+  display: block;
+
+  padding: 0 0 3rem 0;
+
+  h1 {
+    width: auto;
+
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+
+    margin: 0;
+
+    border-bottom: 2px solid colors.$text;
+  }
+}

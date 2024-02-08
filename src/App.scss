@@ -30,3 +30,9 @@ main {
     font-size: 14px;
   }
 }
+
+@media (max-width: screens.$tablet-max) {
+  html {
+    font-size: 12px;
+  }
+}
