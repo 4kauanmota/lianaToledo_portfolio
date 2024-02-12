@@ -1,0 +1,41 @@
+@use "/src/theme/colors.scss";
+
+.projects {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  overflow: hidden;
+
+  li {
+    width: 25%;
+    height: 25vh;
+  }
+}
+
+.imageViewer {
+  .fullImageContainer {
+    width: 100% !important;
+    overflow: scroll;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  & > div {
+    position: absolute;
+    top: 11%;
+
+    & > div:first-child {
+      & > * {
+        background-color: transparent;
+      }
+    }
+
+    & > div:last-child {
+      overflow-y: scroll;
+    }
+  }
+}

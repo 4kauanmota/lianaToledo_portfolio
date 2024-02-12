@@ -1,0 +1,11 @@
+#illustrations {
+  height: 100%;
+
+  margin: 2rem 0 2rem 0;
+
+  & > * {
+    width: 85%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
