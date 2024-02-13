@@ -2,7 +2,7 @@
 @use "/src/theme/screens.scss";
 
 #menu {
-  position: fixed;
+  position: relative;
   top: 0;
 
   width: 100%;
@@ -10,7 +10,7 @@
 
   background: linear-gradient(90deg, colors.$main, colors.$secondary);
 
-  z-index: 1;
+  z-index: 0;
 
   div {
     height: 100%;

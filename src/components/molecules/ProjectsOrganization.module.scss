@@ -2,6 +2,7 @@
 
 .projects {
   list-style: none;
+  padding: 0;
 
   display: flex;
   justify-content: space-evenly;
@@ -17,7 +18,7 @@
 .imageViewer {
   .fullImageContainer {
     width: 100% !important;
-    overflow: scroll;
+    overflow-y: scroll;
 
     img {
       width: 100%;
@@ -25,17 +26,16 @@
   }
 
   & > div {
-    position: absolute;
-    top: 11%;
-
     & > div:first-child {
+      z-index: 3;
+
       & > * {
-        background-color: transparent;
       }
     }
 
     & > div:last-child {
-      overflow-y: scroll;
+      overflow-y: hidden;
+      transform: translateY(1rem);
     }
   }
 }

@@ -13,9 +13,7 @@ const Pages = () => {
   return (
     <>
       <Router>
-        <div style={{ height: "11%" }}>
-          <TopNavigationBar />
-        </div>
+        <TopNavigationBar />
 
         <Routes>
           <Route path="/">

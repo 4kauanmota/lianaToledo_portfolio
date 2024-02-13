@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import styles from "./TopNavigationBar.module.scss";
 
 const TopNavigationBar = () => {
-  const [hideNav, setHideNav] = useState(false);
   const [url, setUrl] = useState(null);
 
   const menu = useRef(null);
@@ -51,21 +50,8 @@ const TopNavigationBar = () => {
       : element.classList.add(styles.open);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      setHideNav(window.innerHeight === screen.height);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-  }, []);
-
   return (
-    <nav
-      id={styles.menu}
-      style={{ display: hideNav ? "none" : "inline-block" }}
-    >
+    <nav id={styles.menu}>
       <div>
         <Link to={"/"}>
           <span onClick={() => setUrl(null)}>
