@@ -16,6 +16,7 @@
 }
 
 .imageViewer {
+  position: relative;
   .fullImageContainer {
     width: 100% !important;
     overflow-y: scroll;
@@ -28,9 +29,6 @@
   & > div {
     & > div:first-child {
       z-index: 3;
-
-      & > * {
-      }
     }
 
     & > div:last-child {

@@ -2,39 +2,23 @@ import React, { useEffect, useRef, useState } from "react";
 import FsLightbox from "fslightbox-react";
 
 import styles from "./ProjectsOrganization.module.scss";
+import useNavStore from "../../store/NavStore";
 
 type ProjectsOrganizationType = { children: any[] };
 
 const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
+  const { showNav } = useNavStore();
+
   const [controller, setController] = useState({
     toggler: false,
     slide: 1,
   });
-  const [controllerPosition, setControllerPosition] = useState(false);
 
   const imageViewer = useRef(null);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setControllerPosition(window.innerHeight === screen.height);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-  }, []);
-
-  useEffect(() => {
-    if (imageViewer.current.lastElementChild) {
-      if (controllerPosition) {
-        imageViewer.current.lastElementChild.style.top = "0";
-      } else {
-        imageViewer.current.lastElementChild.style.top = "11%";
-      }
-    }
-  }, [controllerPosition]);
-
   function open(number: number) {
+    showNav();
+
     setController({
       toggler: !controller.toggler,
       slide: number,
@@ -63,6 +47,7 @@ const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
           toggler={controller.toggler}
           slide={controller.slide}
           exitFullscreenOnClose
+          onClose={() => showNav()}
           sources={children.map((el) => (
             <div
               key={Math.random().toString()}

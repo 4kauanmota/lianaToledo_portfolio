@@ -1,9 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import useNavStore from "../../store/NavStore";
 
 import styles from "./TopNavigationBar.module.scss";
 
 const TopNavigationBar = () => {
+  const { nav } = useNavStore();
+
   const [url, setUrl] = useState(null);
 
   const menu = useRef(null);
@@ -51,7 +54,10 @@ const TopNavigationBar = () => {
   };
 
   return (
-    <nav id={styles.menu}>
+    <nav
+      id={styles.menu}
+      style={nav ? null : { opacity: "0", pointerEvents: "none" }}
+    >
       <div>
         <Link to={"/"}>
           <span onClick={() => setUrl(null)}>

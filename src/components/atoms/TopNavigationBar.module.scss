@@ -3,6 +3,7 @@
 
 #menu {
   position: relative;
+  z-index: 1;
   top: 0;
 
   width: 100%;
@@ -10,7 +11,7 @@
 
   background: linear-gradient(90deg, colors.$main, colors.$secondary);
 
-  z-index: 0;
+  transition: 0.4s all;
 
   div {
     height: 100%;
