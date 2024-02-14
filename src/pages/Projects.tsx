@@ -15,9 +15,15 @@ const Projects = () => {
           <Title>Projects</Title>
 
           <ProjectsOrganization>
-            <Project content="https://mir-s3-cdn-cf.behance.net/project_modules/1400/ca8aae187066139.65810d5ae8737.jpg" />
+            <Project
+              thumb="https://i.postimg.cc/fyqVQYfX/serafleur.png"
+              content="https://mir-s3-cdn-cf.behance.net/project_modules/1400/ca8aae187066139.65810d5ae8737.jpg"
+            />
 
-            <Project content="https://mir-s3-cdn-cf.behance.net/project_modules/1400/eb59eb186984703.657f94f906819.jpg" />
+            <Project
+              thumb="https://i.postimg.cc/J0zsFpZM/academify.png"
+              content="https://mir-s3-cdn-cf.behance.net/project_modules/1400/eb59eb186984703.657f94f906819.jpg"
+            />
           </ProjectsOrganization>
         </section>
       </Fade>

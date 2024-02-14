@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import FsLightbox from "fslightbox-react";
 
 import styles from "./ProjectsOrganization.module.scss";
@@ -25,13 +25,6 @@ const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
     });
   }
 
-  // setTimeout(() => {
-  //   setController((prev) => ({
-  //     ...prev,
-  //     slide: 1,
-  //   }));
-  // }, 5000);
-
   return (
     <>
       <ul className={styles.projects}>
@@ -48,6 +41,7 @@ const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
           slide={controller.slide}
           exitFullscreenOnClose
           onClose={() => showNav()}
+          slideDistance={0.001}
           sources={children.map((el) => (
             <div
               key={Math.random().toString()}
