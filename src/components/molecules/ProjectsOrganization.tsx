@@ -41,7 +41,7 @@ const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
           slide={controller.slide}
           exitFullscreenOnClose
           onClose={() => showNav()}
-          slideDistance={0.001}
+          slideChangeAnimation=""
           sources={children.map((el) => (
             <div
               key={Math.random().toString()}
