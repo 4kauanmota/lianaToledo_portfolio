@@ -8,7 +8,7 @@ const Project = ({ thumb, content }: ProjectType) => {
   return (
     <>
       <article className={styles.project}>
-        <img src={thumb} className={styles.content} />
+        <img src={thumb} />
       </article>
     </>
   );

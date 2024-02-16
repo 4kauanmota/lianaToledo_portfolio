@@ -16,7 +16,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 const AboutMe = () => {
   return (
     <>
-      <Fade style={{ position: "relative", zIndex: "0" }}>
+      <Fade>
         <section id={styles.aboutMe}>
           <Title>About me</Title>
 

@@ -1,0 +1,22 @@
+@use "/src/theme/screens.scss";
+
+.illustrations {
+  list-style: none;
+  padding: 0;
+
+  overflow: hidden;
+
+  column-count: 4;
+}
+
+@media (max-width: screens.$tablet-max) {
+  .illustrations {
+    column-count: 3;
+  }
+}
+
+@media (max-width: screens.$mobile-max) {
+  .illustrations {
+    column-count: 2;
+  }
+}

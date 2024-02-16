@@ -10,7 +10,7 @@ import ProjectsOrganization from "../components/molecules/ProjectsOrganization";
 const Projects = () => {
   return (
     <>
-      <Fade style={{ position: "relative", zIndex: "0" }}>
+      <Fade>
         <section id={styles.projects}>
           <Title>Projects</Title>
 

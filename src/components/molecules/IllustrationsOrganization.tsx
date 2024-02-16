@@ -1,12 +1,14 @@
 import React, { useRef, useState } from "react";
 import FsLightbox from "fslightbox-react";
 
-import styles from "./ProjectsOrganization.module.scss";
+import styles from "./IllustrationsOrganization.module.scss";
 import useNavStore from "../../store/NavStore";
 
-type ProjectsOrganizationType = { children: any[] };
+type IllustrationsOrganizationType = { children: any[] };
 
-const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
+const IllustrationsOrganization = ({
+  children,
+}: IllustrationsOrganizationType) => {
   const { showNav } = useNavStore();
 
   const [controller, setController] = useState({
@@ -27,7 +29,7 @@ const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
 
   return (
     <>
-      <ul className={styles.projects}>
+      <ul className={styles.illustrations}>
         {children.map((project, index) => (
           <li onClick={() => open(index + 1)} key={Math.random().toString()}>
             {project}
@@ -46,7 +48,7 @@ const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
               key={Math.random().toString()}
               className={styles.fullImageContainer}
             >
-              <img className={styles.fullImage} src={el.props.content} />
+              <img className={styles.fullImage} src={el.props.image} />
             </div>
           ))}
         />
@@ -55,4 +57,4 @@ const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
   );
 };
 
-export default ProjectsOrganization;
+export default IllustrationsOrganization;
