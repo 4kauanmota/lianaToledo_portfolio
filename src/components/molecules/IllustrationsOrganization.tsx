@@ -16,8 +16,6 @@ const IllustrationsOrganization = ({
     slide: 1,
   });
 
-  const imageViewer = useRef(null);
-
   function open(number: number) {
     showNav();
 
@@ -37,7 +35,7 @@ const IllustrationsOrganization = ({
         ))}
       </ul>
 
-      <div ref={imageViewer} className={styles.imageViewer}>
+      <div className={styles.imageViewer}>
         <FsLightbox
           toggler={controller.toggler}
           slide={controller.slide}
