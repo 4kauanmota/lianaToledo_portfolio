@@ -40,6 +40,7 @@ const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
           toggler={controller.toggler}
           slide={controller.slide}
           exitFullscreenOnClose
+          slideDistance={1}
           onClose={() => showNav()}
           sources={children.map((el) => (
             <div
