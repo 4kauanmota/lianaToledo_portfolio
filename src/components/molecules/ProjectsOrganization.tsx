@@ -41,6 +41,7 @@ const ProjectsOrganization = ({ children }: ProjectsOrganizationType) => {
           slide={controller.slide}
           exitFullscreenOnClose
           slideDistance={1}
+          disableSlideSwiping
           onClose={() => showNav()}
           sources={children.map((el) => (
             <div
