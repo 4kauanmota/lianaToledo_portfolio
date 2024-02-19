@@ -36,17 +36,14 @@ const TopNavigationBar = () => {
 
     const element = event.target as HTMLElement;
     element.classList.add(styles.selected);
+
+    if (menu.current.classList.contains(styles.open)) {
+      menuInteraction();
+    }
   };
 
-  const unSelect = (event: React.MouseEvent<HTMLLIElement>) => {
-    setUrl(null);
-
-    const element = event.target as HTMLElement;
-    element.classList.remove(styles.selected);
-  };
-
-  const menuInteraction = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const element = event.currentTarget as HTMLElement;
+  const menuInteraction = () => {
+    const element = menu.current;
 
     element.classList.contains(styles.open)
       ? element.classList.remove(styles.open)
@@ -60,7 +57,14 @@ const TopNavigationBar = () => {
     >
       <div>
         <Link to={"/"}>
-          <span onClick={() => setUrl(null)}>
+          <span
+            onClick={() => {
+              setUrl(null);
+              if (menu.current.classList.contains(styles.open)) {
+                menuInteraction();
+              }
+            }}
+          >
             <h1>Liana Toledo</h1>
           </span>
         </Link>
@@ -74,19 +78,19 @@ const TopNavigationBar = () => {
         </button>
 
         <ul>
-          <li onMouseOver={select} onMouseOut={unSelect} onClick={select}>
+          <li onClick={select}>
             <Link ref={aboutMe} to={"/"}>
               About me
             </Link>
           </li>
 
-          <li onMouseOver={select} onMouseOut={unSelect} onClick={select}>
+          <li onClick={select}>
             <Link ref={illustrations} to={"/illustrations"}>
               Illustrations
             </Link>
           </li>
 
-          <li onMouseOver={select} onMouseOut={unSelect} onClick={select}>
+          <li onClick={select}>
             <Link ref={projects} to={"/projects"}>
               Projects
             </Link>
