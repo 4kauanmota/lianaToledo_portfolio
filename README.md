@@ -1,4 +1,4 @@
-![Project Stars](https://img.shields.io/github/stars/4kauanmota/lianaToledo_portfolio?color=1e90ff) ![Project Commits Week](https://img.shields.io/github/commit-activity/w/4kauanmota/lianaToledo_portfolio?color=1e90ff)
+![Project Stars](https://img.shields.io/github/stars/4kauanmota/lianaToledo_portfolio-WEB?color=1e90ff) ![Project Commits Week](https://img.shields.io/github/commit-activity/w/4kauanmota/lianaToledo_portfolio-WEB?color=1e90ff)
 
 # 📄 **Informations**
 **This project is a portfolio made for an artist, using modern web technologies :)**
@@ -28,7 +28,7 @@
 + [NODE.JS](https://nodejs.org/en)
 
 ### Codes
-+ `git clone https://github.com/4kauanmota/lianaToledo_portfolio .`
++ `git clone https://github.com/4kauanmota/lianaToledo_portfolio-WEB .`
 + `npm install`
 + `npm run start`
 
@@ -37,7 +37,7 @@
 ### Cloning project
 First you will need to open the terminal in the folder where you want to clone this project, and then, you paste this code 
 ```
-git clone https://github.com/4kauanmota/lianaToledo_portfolio .
+git clone https://github.com/4kauanmota/lianaToledo_portfolio-WEB .
 ```
 
 ### Installing dependencies
