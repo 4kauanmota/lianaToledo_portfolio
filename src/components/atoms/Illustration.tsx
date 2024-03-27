@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./Illustration.module.scss";
 
 type IllustrationType = {
@@ -10,7 +8,7 @@ type IllustrationType = {
 const Illustration = ({ date, image }: IllustrationType) => {
   return (
     <div className={styles.illustration}>
-      <img src={image} />
+      <img src={image} loading="lazy" />
       <p>{date}</p>
     </div>
   );

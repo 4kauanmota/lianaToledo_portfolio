@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
@@ -14,7 +15,7 @@ module.exports = {
   target: "web",
 
   devServer: {
-    port: "3000",
+    port: "4000",
     static: {
       directory: path.join(__dirname, "public"),
     },
@@ -25,7 +26,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".css", ".scss", ".png"],
+    extensions: [".tsx", ".ts", ".js", "json", ".css", ".scss", ".png"],
   },
 
   module: {
@@ -46,15 +47,19 @@ module.exports = {
         test: /\.scss$/i,
         use: [
           { loader: "style-loader" },
-          // { loader: "css-modules-typescript-loader" },
           { loader: "css-loader", options: { modules: true } },
           { loader: "sass-loader" },
         ],
       },
 
       {
-        test: /\.(png|svg|jp(e*)g|gif)$/i,
-        use: [{ loader: "file-loader" }],
+        test: /\.(png|svg|jpe?g|gif)$/i,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+          outputPath: "images",
+          esModule: false,
+        },
       },
     ],
   },
@@ -62,6 +67,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
+    }),
+    new webpack.ProvidePlugin({
+      React: "react",
     }),
   ],
 };
