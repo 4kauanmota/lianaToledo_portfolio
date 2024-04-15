@@ -20,6 +20,11 @@ const Illustrations = () => {
             />
 
             <Illustration
+              date="Mar. 2024"
+              image="https://64.media.tumblr.com/1e4f59d93ef4748b6b9264dd57cc38dd/f1412a0073379716-d3/s2048x3072/31ac78befcc2c18dcb4faefde72fd3b643b1c03c.png"
+            />
+            
+            <Illustration
               date="Jan. 2024"
               image="https://i.postimg.cc/qvmFCX8Z/11-jan-2024.png"
             />
