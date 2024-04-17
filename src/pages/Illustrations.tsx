@@ -19,6 +19,11 @@ const Illustrations = () => {
               image="https://i.postimg.cc/2yf9fHD3/12-fev-2024.png"
             />
 
+           <Illustration
+              date="Apr. 2024"
+              image="https://media.licdn.com/dms/image/D4E22AQFpvywU398JBQ/feedshare-shrink_2048_1536/0/1713251919515?e=1716422400&v=beta&t=jb6KfoechUoSzcAmrKRV6xzkVNljlsjvf-ga8JHiMy4"
+            />
+            
             <Illustration
               date="Mar. 2024"
               image="https://64.media.tumblr.com/1e4f59d93ef4748b6b9264dd57cc38dd/f1412a0073379716-d3/s2048x3072/31ac78befcc2c18dcb4faefde72fd3b643b1c03c.png"
