@@ -21,7 +21,7 @@ const Illustrations = () => {
 
            <Illustration
               date="Apr. 2024"
-              image="https://media.licdn.com/dms/image/D4E22AQFpvywU398JBQ/feedshare-shrink_2048_1536/0/1713251919515?e=1716422400&v=beta&t=jb6KfoechUoSzcAmrKRV6xzkVNljlsjvf-ga8JHiMy4"
+              image="https://mir-s3-cdn-cf.behance.net/project_modules/fs/5f3464196446229.661ff251cb0e7.jpg"
             />
             
             <Illustration
