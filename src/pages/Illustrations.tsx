@@ -64,6 +64,11 @@ const Illustrations = () => {
               image="https://i.postimg.cc/xTnpxF54/16-nov-2023.jpg"
             />
 
+           <Illustration
+              date="Set. 2024"
+              image="https://c10.patreonusercontent.com/4/patreon-media/p/post/89513737/4821163aaef947f08a6fdeb206899add/eyJxIjoxMDAsIndlYnAiOjB9/1.gif?token-time=1715472000&token-hash=okH6RpD2JODKR98kafQfisDTCRrML5Ps3X2Bl0-8gZw%3D"
+            />
+            
             <Illustration
               date="Aug. 2023"
               image="https://i.postimg.cc/c1Q5cNR3/20-agosto-2023.png"
