@@ -24,6 +24,12 @@ const Projects = () => {
               thumb={require("/public/assets/img/banners/academify.png")}
               content="https://mir-s3-cdn-cf.behance.net/project_modules/1400/eb59eb186984703.657f94f906819.jpg"
             />
+
+            <Project
+              thumb={require("/public/assets/img/banners/Efêmera Eternidade.png")}
+              content="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/0ecd57197422415.66304e23aacb8.png"
+            />
+            
           </ProjectsOrganization>
         </section>
       </Fade>
