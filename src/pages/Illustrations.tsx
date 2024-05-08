@@ -174,10 +174,6 @@ const Illustrations = () => {
               image="https://i.postimg.cc/DzmWPZX3/19-dez-2021.jpg"
             />
 
-            <Illustration
-              date="Dec. 2021"
-              image="https://i.postimg.cc/ZnnDT69D/9-dez-2021.jpg"
-            />
           </IllustrationsOrganization>
         </section>
       </Fade>
